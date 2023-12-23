@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#2196F3" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/icon_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:contentDescription="icon_back"
+            android:src="@drawable/ic_arrow_back_white_24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/icon_back"
+            android:layout_marginTop="-28dp"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/montserrat_semibolditalic"
+            android:gravity="center"
+            android:text="Bus List"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/icon_back"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/textViewSolo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:gravity="center"
+                    android:text="SOLO"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="8dp"
+                    android:src="@drawable/ic_swap" />
+
+                <TextView
+                    android:id="@+id/textViewMadiun"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:gravity="center"
+                    android:text="MADIUN"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/dateTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8sp"
+                android:gravity="center"
+                android:text="Jum, 7 Des 2023"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="120dp"
+            android:layout_marginEnd="20dp"
+            app:cardBackgroundColor="@color/snow">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <!-- TextView PO -->
+                    <TextView
+                        android:id="@+id/textViewPO1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:fontFamily="@font/montserrat_bolditalic"
+                        android:text="PO.Haryanto"
+                        android:textColor="#FF01579B"
+                        android:textSize="21sp" />
+
+                    <!-- TextView Harga -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="2dp"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:text="Rp. 200.000"
+                        android:textColor="#FF01579B"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+
+                <!-- TextView Durasi -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="3 jam"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+
+                <!-- TextView Waktu -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="8.00 AM - 11.00 AM"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+
+                <!-- TextView Rating -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="\u2605\u2605\u2605\u2605"
+                    android:textSize="14sp" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <!-- Button Pilih Kursi -->
+                    <Button
+                        android:id="@+id/btn_kursi1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/button_kursi"
+                        android:text="Pilih Kursi"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:textColor="#ffffff"
+                        app:backgroundTint="@null"
+                        android:onClick="showPilihKursi"/>
+
+                    <!-- Button Detail Bus -->
+                    <Button
+                        android:id="@+id/btn_detail1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/button_kursi"
+                        android:text="Detail Bus"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:textColor="#ffffff"
+                        app:backgroundTint="@null"
+                        android:layout_toStartOf="@id/btn_kursi1"
+                        android:layout_marginEnd="8dp"
+                        android:onClick="showDetailBus"/>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="300dp"
+            app:cardBackgroundColor="@color/snow">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <!-- TextView PO -->
+                    <TextView
+                        android:id="@+id/textViewPO2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:fontFamily="@font/montserrat_bolditalic"
+                        android:text="PO.Sinar Jaya"
+                        android:textColor="#FF01579B"
+                        android:textSize="21sp" />
+
+                    <!-- TextView Harga -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="2dp"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:text="Rp. 180.000"
+                        android:textColor="#FF01579B"
+                        android:textSize="18sp" />
+
+                </RelativeLayout>
+
+                <!-- TextView Durasi -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="3,5 jam"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+
+                <!-- TextView Waktu -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="8.00 PM - 11.30 PM"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+
+                <!-- TextView Rating -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="\u2605\u2605\u2605\u2605"
+                    android:textSize="14sp" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <!-- Button Pilih Kursi -->
+                    <Button
+                        android:id="@+id/btn_kursi2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/button_kursi"
+                        android:text="Pilih Kursi"
+                        android:textSize="14dp"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:textColor="#ffffff"
+                        app:backgroundTint="@null" />
+
+                    <!-- Button Detail Bus -->
+                    <Button
+                        android:id="@+id/btn_detail2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/button_kursi"
+                        android:text="Detail Bus"
+                        android:textSize="14dp"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:textColor="#ffffff"
+                        app:backgroundTint="@null"
+                        android:layout_toStartOf="@id/btn_kursi2"
+                        android:layout_marginEnd="8dp"
+                        android:onClick="showDetailBus"/>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="480dp"
+            android:layout_marginEnd="20dp"
+            app:cardBackgroundColor="@color/snow">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <!-- TextView PO -->
+                    <TextView
+                        android:id="@+id/textViewPO3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:fontFamily="@font/montserrat_bolditalic"
+                        android:text="PO.Rosalia Indah"
+                        android:textColor="#FF01579B"
+                        android:textSize="21sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="2dp"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:text="Rp. 300.000"
+                        android:textColor="#FF01579B"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="2 jam"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="8.00 PM - 10.00 PM"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="\u2605\u2605\u2605\u2605\u2605"
+                    android:textSize="14sp" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <!-- Button Pilih Kursi -->
+                    <Button
+                        android:id="@+id/btn_kursi3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/button_kursi"
+                        android:text="Pilih Kursi"
+                        android:textSize="14dp"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:textColor="#ffffff"
+                        app:backgroundTint="@null" />
+
+                    <!-- Button Detail Bus -->
+                    <Button
+                        android:id="@+id/btn_detail3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/button_kursi"
+                        android:text="Detail Bus"
+                        android:textSize="14dp"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:textColor="#ffffff"
+                        app:backgroundTint="@null"
+                        android:layout_toStartOf="@id/btn_kursi3"
+                        android:layout_marginEnd="8dp"
+                        android:onClick="showDetailBus"/>
+                </RelativeLayout>
+            </LinearLayout>
+-->
+
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+</RelativeLayout>

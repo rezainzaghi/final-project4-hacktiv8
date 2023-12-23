@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1052953679495",
+    "project_id": "final-project-4-terbaru",
+    "storage_bucket": "final-project-4-terbaru.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1052953679495:android:9d508f570bdebe0075ca22",
+        "android_client_info": {
+          "package_name": "com.hacktiv8.finalproject4"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1052953679495-d7dm2vhra3ggsrnsqdcpr7mscf9j0lbp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hacktiv8.finalproject4",
+            "certificate_hash": "6d84bc342fd10e1da6a277a7e6855d53991a59ac"
+          }
+        },
+        {
+          "client_id": "1052953679495-sctk188j0ei3df3p1rsiop5um3ocdi64.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBeISuDq7PblMS45kwoO97Y0rPgmF_f2oc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1052953679495-sctk188j0ei3df3p1rsiop5um3ocdi64.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

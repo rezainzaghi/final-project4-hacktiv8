@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/snow">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#2196F3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_semibolditalic"
+        android:text="Detail Bus"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:padding="8dp"/>
+
+    <ImageButton
+        android:id="@+id/back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="3dp"
+        android:padding="10dp"
+        android:background="#2196F3"
+        android:src="@drawable/ic_back" />
+
+    <TextView
+        android:id="@+id/text_bus_name1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="80dp"
+        android:layout_centerHorizontal="true"
+        android:text="PO.Rosalia Indah"
+        android:fontFamily="@font/montserrat_bold"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+
+    <ImageView
+        android:id="@+id/image_bus"
+        android:layout_width="350dp"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:src="@drawable/rosalia1" />
+
+    <TextView
+        android:id="@+id/text_bus_description1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image_bus"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="18dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Tipe Executive Plus SHD "
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/text_bus_description2"
+        android:layout_width="378dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_bus_description1"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Rute Perjalanan : Solo - Madiun"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/text_bus_description3"
+        android:layout_width="378dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_bus_description2"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Jadwal Keberangkatan : 8.00 PM - 10.00 PM"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/text_bus_description4"
+        android:layout_width="378dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_bus_description3"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Fasilitas: AC, toilet, LCD TV, musik, selimut, bantal, foot rest, leg rest, layanan makan, snack, free air mineral, free Wifi, dan layanan pramugara/i"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/text_bus_description5"
+        android:layout_width="378dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_bus_description4"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:textSize="16sp"
+        android:textColor="@color/blue"
+        android:text="\u2605\u2605\u2605\u2605\u2605"  />
+
+</RelativeLayout>
